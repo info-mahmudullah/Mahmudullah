@@ -1,0 +1,61 @@
+contact = {}
+
+def ShowFuntion():
+    print(contact.items())
+    print("Name \t Contact")
+    for key in contact:
+        print("{} \t {}".format(key,contact.get(key)))
+
+
+
+while True:
+    choice = int( input("1.Add New Contact \n"
+                   "2.Search the Contact\n"
+                   "3.Display the Contact \n"
+                   "4.Edit the Contact \n"
+                   "5.Delete the Contact \n"
+                   "6.Exit \n"
+                   "Please Write Number Between 1-6:  "))
+    if choice == 1:
+        name = input("Add You Contact Name: ")
+        phone = input("Add Your Phone Number: ")
+        contact[name] = phone
+
+    elif choice == 2:
+      contactName =  input("Search the Contact: ")
+      if contactName in contact:
+          print(contactName,"contact number is ",contact[contactName])
+      else:
+          print("Not Found the contact")
+
+    elif choice == 3:
+        if not  contact:
+            print("contact book is empty")
+        else:
+            ShowFuntion()
+
+    elif choice == 4:
+        EditContact = input("Edit your contact: ")
+        if EditContact in contact:
+            phone = input("Change Your Number: ")
+            contact[EditContact] = phone
+            print("Contact Updated Successfully ")
+            ShowFuntion()
+        else:
+            print("Name is Not Found")
+
+    elif choice == 5:
+        Del_contact = input("which contact do you want to Delete?:")
+        if Del_contact in contact:
+            DeletedConfirm = input("do you want to delete this contact y/n")
+            if DeletedConfirm == "y" or DeletedConfirm == "Y":
+                contact.pop(Del_contact)
+            ShowFuntion()
+        else:
+            print("the name is not found in the contact")
+
+    else:
+        break
+
+
+
