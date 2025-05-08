@@ -1,0 +1,8 @@
+username = input("What is your name:")
+fatherName=input("What is your father name:")
+motherName= input("What is your mother name:")
+study=input("Which class do you read in:")
+relation=input("Are you single or married:")
+
+print(f"My Sonar Name is {username},My Sonar father name is {fatherName},My Sonar Mother name is {motherName},"
+      f"My sona study in{study}")
