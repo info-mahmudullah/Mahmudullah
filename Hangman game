@@ -1,0 +1,28 @@
+word = "Flower"
+chances = 5
+GussAdd = []
+done = False
+
+while not done:
+    for letter in word:
+        if letter.lower() in GussAdd:
+            print(letter, end = "")
+        else:
+            print("_", end="")
+
+    MyGuess = input(f"Your chances is {chances}, Guss the Letter")
+    GussAdd.append(MyGuess.lower())
+    if MyGuess.lower() not in word.lower():
+        chances -= 1
+        if chances == 0:
+            break
+
+    done = True
+    for letter in word:
+        if letter.lower() not in GussAdd:
+            done = False
+
+if done:
+    print(f"yes,You have won the game,the word is {word}")
+else:
+    print("You loss the game and hang on a kosugas")
