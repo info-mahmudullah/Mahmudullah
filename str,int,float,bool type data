@@ -1,0 +1,22 @@
+#Example of variable 
+#str type data
+
+first_name = "Mahmud"
+last_name = "ullah"
+full_name = first_name +""+ last_name
+print("My name is " + full_name)
+
+#int type data 
+age = 21
+age += 6
+print("My age is " + str(age))
+
+#float type data 
+
+hight =  250.65
+print("My height is " + str (hight)+" "+"cm" )
+
+#bool type data
+
+human = True
+print("Are you a human?:" + str(human))
