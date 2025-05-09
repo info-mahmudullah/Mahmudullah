@@ -1,0 +1,38 @@
+#multiple assignment
+#type 1
+name = "Mahmud"
+age = 27
+attractive = True
+
+
+print(name)
+print(age)
+print(attractive)
+
+#type 2
+
+name, age, attractive = "Mahmud", 27, True
+
+
+print(name)
+print(age)
+print(attractive)
+ #type 3
+hissu = 30
+gussi = 30
+fussu =30
+fillu = 30
+
+print(hissu)
+print(gussi)
+print(fussu)
+print(fillu)
+
+#type 4
+
+hissu = gussi = fussu = fillu =30
+
+print(hissu)
+print(gussi)
+print(fussu)
+print(fillu)
