@@ -23,3 +23,16 @@ food = drink,dinner,dessert
 
 
 print(food[0][0])
+    #tuple 
+#tuple = collecting which is ordered and unchangeable
+#        used to group together related data
+
+studet = ("bro",21,"male")
+print(studet.count("bro"))
+
+for i in studet:
+    print(i)
+
+if "bro" in studet:
+    print("you are Lucky!")
+    
