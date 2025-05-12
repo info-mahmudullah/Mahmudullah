@@ -13,3 +13,13 @@ food.clear()
 
 for i in food:
     print(i)
+# 2D lists =  a list of lists
+
+drink = ["coffee","soda","tea"]
+dinner = ["pizza","hamburger","hotdog" ]
+dessert = ["cake","ice cream" ]
+
+food = drink,dinner,dessert
+
+
+print(food[0][0])
