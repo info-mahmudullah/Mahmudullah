@@ -1,0 +1,16 @@
+# while loop = a statement that will execute it's block code,
+#               as long as it's condition remains true
+
+while 1==1:
+    
+    print("help! I'm stuck in a loop !")
+
+name = ""
+while len(name)==0:
+    name = input("Enter your name? ")
+print("Hello "+name)
+
+name =None
+while not(name)==0:
+    name = input("Enter your name? ")
+print("Hello "+name)
