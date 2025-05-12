@@ -1,0 +1,15 @@
+#list = used to store multiple items in a single variable
+
+food = ["pizza","hamburger","hotdog","spaghetti","pudding"]
+
+food[0]="kutta"
+
+food.append("apple")
+food.remove("hamburger")
+food.pop()
+food.insert(0,"cake")
+food.sort()
+food.clear()
+
+for i in food:
+    print(i)
