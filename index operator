@@ -1,0 +1,14 @@
+#index operator []= gives access to a sequence's element (str,list,tuple)
+
+name= "mahmudullah"
+
+if (name[0].islower()):
+    name=name.capitalize()
+print(name)
+
+fist_name=name[:12].upper()
+last_name = name[6:].lower()
+last_charachert= name[-1]
+print(fist_name)
+print(last_name)
+print(last_charachert)
