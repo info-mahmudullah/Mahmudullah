@@ -1,0 +1,9 @@
+# scope = The region that a variable is recognized
+#         A variable is only available from inside the region is created.
+#         A global and locally scoped versions of a variable can be created
+name=("bro") #globla scope ( available inside and outside function)
+def display_name():
+    name = "Code" #local scope ( available inside the function)
+    print(name)
+display_name()
+print(name)
