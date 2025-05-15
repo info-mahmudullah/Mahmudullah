@@ -1,0 +1,18 @@
+import os
+
+path = "C:\\Users\\Mahmudullah\\Desktop\\folder"
+
+if os.path.exists(path):
+    print("Ase")
+    if os.path.isfile(path):
+        print("That is a file ")
+    elif os.path.isdir(path):
+        print("That is a directory!")
+else:
+    print("Nai")
+
+try:
+    with open("test.txt") as file:
+        print(file.read())
+except FileNotFoundError:
+    print("That file was not found:(")
