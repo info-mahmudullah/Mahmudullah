@@ -1,0 +1,19 @@
+# str.format() = optional method that gives users
+#                more control when displaying output
+
+animal = "cow"
+item = "moon"
+print("The "+animal+" jumped our the "+item)
+print("the {} jumped over the {}".format("cow","moon"))
+print("the {1} jumped over the {0}".format("cow","moon"))
+
+name = "Mahmudullah"
+
+print("Hello , my name is {}".format(name))
+print("Hello , my name is {:10}.niece to meet you".format(name))
+
+number = 1000
+print("The number pi is {:.3f}".format(number))
+print("The number pi is {:b}".format(number))   #binary
+print("The number pi is {:o}".format(number))   # octal
+print("The number pi is {:x}".format(number))   #hexa decimal 
