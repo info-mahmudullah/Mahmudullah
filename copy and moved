@@ -18,3 +18,13 @@ try:
         print(source+" was moved")
 except FileNotFoundError:
     print(source+" was not found")
+
+Delete the file
+
+import os
+path = "test.txt"
+
+try:
+    os.remove(path)
+except FileNotFoundError:
+    print("That file was not found")
