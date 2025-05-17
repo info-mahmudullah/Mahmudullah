@@ -1,0 +1,15 @@
+# module = a file containing python code.May contain function,classes,etc.
+# used with modular programing , which is to separate a program into parts
+try:
+    import message as msg
+    msg.bye()
+    message.hello()
+    message.bye()
+except NameError:
+    print("Name Error is here")
+
+from message import hello,bye
+hello()
+bye()
+
+help("modules")
